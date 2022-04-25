@@ -150,10 +150,10 @@ class Interpreter
       # Jump statements
       # Immediately parse the character landed on before the main loop skips it
       when 'H' 
-        self.jump_in
+        self.jump_out
         self.handle_char
       when 'B'
-        self.jump_out
+        self.jump_in
         self.handle_char
       when 'W'
         self.jump_to_top
